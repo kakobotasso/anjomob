@@ -175,8 +175,15 @@ body{
 
 #header #guardaSliderHome #sliderHome{
     width:940px;
+    height:392px;
     margin:0 auto;
     position:relative;
+}
+
+#header #guardaSliderHome #sliderHome img{
+    position:absolute;
+    top:0px;
+    left:0px;
 }
 
 #header #guardaSliderHome #sliderHome #paginacao{
