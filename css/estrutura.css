@@ -131,24 +131,38 @@ body{
 
 #header #guardaMenu ul li{
     float:left;
-    height:33px;
-    padding:7px 22px 0px 21px;
+    height:40px;
 }
 
-#header #guardaMenu ul li.noPadding{ padding:7px 0px 0px 0px; }
+#header #guardaMenu ul li.noPadding a{ padding:7px 11px 20px 9px; }
 
 #header #guardaMenu ul li a{
     float:left;
-    width:100%;
     text-align:center;
     font-family: 'PreloSlabBold';
     color:#332919;
     font-size:18px;
+    padding:7px 22px 20px 21px;
 }
 
-#header #guardaMenu ul li.marcado{ background:url("imgs/bg-menu-menor.png") no-repeat 0px 0px; }
+#header #guardaMenu ul li a#home:hover,
+#header #guardaMenu ul li a#home.marcado{ background:url("imgs/bg-menu-menor.png") no-repeat 0px 0px; }
 
-#header #guardaMenu ul li.marcado a{ color:#fff; }
+#header #guardaMenu ul li a#para-o-seu-negocio{ padding:7px 20px 20px 22px; }
+#header #guardaMenu ul li a#para-o-seu-negocio:hover,
+#header #guardaMenu ul li a#para-o-seu-negocio.marcado{ background:url("imgs/bg-menu-empresa.png") no-repeat 0px 0px; }
+
+#header #guardaMenu ul li a#para-sua-familia:hover,
+#header #guardaMenu ul li a#para-sua-familia.marcado{ background:url("imgs/bg-menu-maior.png") no-repeat 0px 0px; }
+
+#header #guardaMenu ul li a#o-que-o-anjo-faz:hover,
+#header #guardaMenu ul li a#o-que-o-anjo-faz.marcado{ background:url("imgs/bg-menu-maior.png") no-repeat 0px 0px; }
+
+#header #guardaMenu ul li a#como-instalar:hover,
+#header #guardaMenu ul li a#como-instalar.marcado{ background:url("imgs/bg-menu-instalar.png") no-repeat 0px 0px; }
+
+#header #guardaMenu ul li a:hover,
+#header #guardaMenu ul li a.marcado{ color:#fff; }
 
 #header #guardaSliderHome{
     float:left;
@@ -206,6 +220,7 @@ body{
     padding:0px 30px 0px 0px;
 }
 
+#content .depoimentos h3,
 #content .trioHome h3{
     float:left;
     width:100%;
@@ -214,6 +229,7 @@ body{
     padding:0px 0px 5px 0px;
 }
 
+#content .depoimentos h3 span,
 #content .trioHome h3 span{
     float:left;
     width:100%;
@@ -221,6 +237,7 @@ body{
     font-size:20px;
 }
 
+#content .depoimentos h3 strong,
 #content .trioHome h3 strong{
     float:left;
     width:100%;
@@ -229,12 +246,17 @@ body{
     text-transform:uppercase;
 }
 
+#content .depoimentos p,
+#content .depoimentos strong,
+#content .depoimentos span,
+#content .depoimentos sub,
 #content .trioHome p{
     font-family: 'PreloLight';
     font-size:15px;
     color:#fff;
 }
 
+#content .depoimentos .botao,
 #content .trioHome .botao{
     float:left;
     width:93px;
@@ -247,11 +269,49 @@ body{
 }
 
 #content .depoimentos{
-    padding-right:0px;
+    float:left;
+    width:300px;
 }
 
-#content .depoimentos p{
-    clear:both;
+#content .depoimentos #fotoTextoDepoimento img{
+    float:left;
+    padding:0px 5px 0px 0px;
+}
+
+#content .depoimentos #fotoTextoDepoimento p{
+    font-family: 'PreloLight';
+    font-size:17px;
+}
+
+#content .depoimentos #fotoTextoDepoimento p strong{
+    display:inline-block;
+    font-size:27px;
+    font-family:"Times New Roman";
+}
+
+#content .depoimentos #fotoTextoDepoimento sub{
+    font-size:27px;
+    font-family:"Times New Roman";
+    font-weight:bold;
+}
+
+#content .depoimentos #assinaturaDepoimento{
+    float:left;
+    width:100%;
+}
+
+#content .depoimentos #assinaturaDepoimento strong{
+    float:left;
+    width:100%;
+    font-family: 'PreloSlabBold';
+    font-size:16px;
+}
+
+#content .depoimentos #assinaturaDepoimento span{
+    float:left;
+    width:100%;
+    font-family: 'PreloLight';
+    font-size:13px;
 }
 
 /* ++++++++++++++++++++++++++ RODAPE ++++++++++++++++++++++++++ */
@@ -260,6 +320,7 @@ body{
     width:100%;
     height:132px;
     background:url("imgs/bg-rodape.png") no-repeat center 0px;
+    position:relative;
 }
 
 #footer p a,
@@ -304,4 +365,179 @@ body{
     float:left;
     display:inline-block;
     margin:0px -1px;
+}
+
+/* ****************************************************
+    O QUE O ANJO FAZ
+**************************************************** */
+.internas{
+    background:url("imgs/bg-topo.jpg") repeat 0px 0px;
+}
+
+.internas{
+    float:left;
+    position:relative;
+    top:-320px;
+    display:inline-block;
+    margin-bottom:-400px;
+}
+
+.internas #ladoEsquerdo{
+    float:left;
+    width:715px;
+    padding:0px 0px 100px 0px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda{
+    float:left;
+    width:100%;
+}
+
+.internas #ladoEsquerdo #topoEsquerda h1{
+    float:left;
+    background:url("imgs/bg-body.gif") repeat 0px 0px;
+    font-family: 'PreloSlabBold';
+    font-size:45px;
+    color:#fff;
+    text-transform:uppercase;
+    padding:5px 18px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda h2{
+    float:left;
+    width:100%;
+    font-family: 'PreloLight';
+    font-size:29px;
+    color:#424242;
+    font-style:italic;
+    padding:25px 0px 0px 0px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda h3{
+    float:left;
+    width:100%;
+    font-family: 'PreloLight';
+    font-size:29px;
+    color:#424242;
+    font-style:italic;
+    padding:25px 0px 0px 0px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda h3 span{
+    float:left;
+    width:100%;
+    font-size:20px;
+    font-style:normal;
+}
+
+.internas #ladoEsquerdo #topoEsquerda .subtituloMenor{font-size:24px;}
+
+.internas #ladoEsquerdo #topoEsquerda p{
+    float:left;
+    width:100%;
+    font-family: 'PreloLight';
+    font-size:19px;
+    color:#424242;
+    padding:45px 0px 45px 0px;
+}
+
+.comoinstalar #ladoEsquerdo #topoEsquerda p{ padding-bottom:5px; }
+
+.internas #ladoEsquerdo #topoEsquerda strong{
+    float:left;
+    width:100%;
+    font-family: 'PreloSlabBold';
+    font-size:19px;
+    color:#424242;
+    padding:0px 0px 0px 0px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda b{
+    font-family: 'PreloSlabBold';
+}
+
+.internas #ladoEsquerdo #topoEsquerda a{
+    text-decoration:underline;
+    color:#424242;
+}
+
+.internas #ladoEsquerdo #contentEsquerda{
+    float:left;
+    width:100%;
+}
+
+.internas #ladoEsquerdo #contentEsquerda ul{
+    float:left;
+    width:100%;
+    padding:30px 0px 56px 0px;
+}
+
+.internas #ladoEsquerdo #contentEsquerda ul li{
+    float:left;
+    border-bottom:1px solid #b8b8b8;
+    padding:20px 11px 15px 20px;
+}
+
+.internas #ladoEsquerdo #contentEsquerda ul li img{
+    float:left;
+}
+
+.internas #ladoEsquerdo #contentEsquerda ul li p{
+    float:left;
+    width:615px;
+    padding:0px 0px 0px 30px;
+    font-family: 'PreloLight';
+    font-size:20px;
+}
+
+.internas #ladoDireito{
+    float:right;
+    width:218px;
+    padding:50px 0px 100px 0px;
+}
+
+.internas #ladoDireito #depoimentosDireita{
+    float:left;
+    padding:26px 0px 0px 0px;
+}
+
+.internas #ladoDireito #depoimentosDireita #fotoTextoDepoimento img{
+    float:left;
+    padding:0px 5px 0px 0px;
+}
+
+.internas #ladoDireito #depoimentosDireita #fotoTextoDepoimento p{
+    font-family: 'PreloLight';
+    font-size:17px;
+}
+
+.internas #ladoDireito #depoimentosDireita #fotoTextoDepoimento p strong{
+    display:inline-block;
+    font-size:27px;
+    font-family:"Times New Roman";
+}
+
+.internas #ladoDireito #depoimentosDireita #fotoTextoDepoimento sub{
+    font-size:27px;
+    font-family:"Times New Roman";
+    font-weight:bold;
+}
+
+.internas #ladoDireito #depoimentosDireita #assinaturaDepoimento{
+    float:left;
+    width:100%;
+}
+
+.internas #ladoDireito #depoimentosDireita #assinaturaDepoimento strong{
+    float:left;
+    width:100%;
+    font-family: 'PreloSlabBold';
+    font-size:16px;
+}
+
+.internas #ladoDireito #depoimentosDireita #assinaturaDepoimento span{
+    float:left;
+    width:100%;
+    font-family: 'PreloLight';
+    font-size:13px;
 }
