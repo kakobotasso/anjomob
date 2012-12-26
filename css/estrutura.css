@@ -548,3 +548,60 @@ body{
     font-family: 'PreloLight';
     font-size:13px;
 }
+
+/* CONTATO */
+#guardaFormContato{
+    float:left;
+    width:100%;
+    padding:10px 0px 0px 0px;
+}
+
+#guardaFormContato ul,
+#guardaFormContato ul li{
+    float:left;
+    width:100%;
+}
+
+#guardaFormContato ul li{ padding:5px 0px 5px 0px; }
+
+#guardaFormContato label{
+    float:left;
+    font-family: 'PreloLight';
+    font-size:19px;
+}
+
+#guardaFormContato label span{
+    float:left;
+    width:150px;
+    text-align:right;
+    font-family: 'PreloLight';
+    font-size:19px;
+    padding:5px 10px 0px 0px;
+}
+
+#guardaFormContato label .input{
+    float:left;
+    font-family: 'PreloLight';
+    font-size:17px;
+    padding:5px 3px;
+    border:1px solid #ccc;
+}
+
+#guardaFormContato label input{ width:350px; }
+#guardaFormContato label textarea{
+    width:350px;
+    height:140px;
+    overflow:auto;
+}
+
+#guardaFormContato #btEnviarFormContato{
+    float:left;
+    background:url("imgs/bg-body.gif") repeat 0px 0px;
+    font-family: 'PreloLight';
+    font-size:17px;
+    color:#fff;
+    font-weight:bold;
+    padding:3px 7px;
+    display:inline-block;
+    margin:0px 0px 0px 450px;
+}
