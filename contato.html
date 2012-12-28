@@ -35,7 +35,7 @@
                         <li><a href="para-sua-familia.html" id="para-sua-familia">Para sua família</a></li>
                         <li><a href="para-o-seu-negocio.html" id="para-o-seu-negocio">Para o seu negócio</a></li>
                         <li><a href="o-que-o-anjo-faz.html" id="o-que-o-anjo-faz">O que o Anjo faz?</a></li>
-                        <li><a href="javascript:void(0);" id="planos">Planos</a></li>
+                        <li><a href="planos.html" id="planos">Planos</a></li>
                         <li><a href="javascript:void(0);" id="faq">FAQ</a></li>
                         <li class="noPadding"><a href="como-instalar.html" id="como-instalar">Como instalar?</a></li>
                     </ul>
@@ -51,33 +51,33 @@
                 <div id="ladoEsquerdo">
                     <div id="topoEsquerda">
                         <h1>Contato</h1>
-                        <p>Diferente do Anjo da Clarice, o Anjomob nunca te deixa na mão. Principalmente quando o assunto é proteger a sua família.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         
                         <div id="guardaFormContato">
-                            <form method="post" action="">
+                            <form method="post">
                                 <ul>
                                     <li>
                                         <label>
                                             <span>Nome:</span>
-                                            <input type="text" name="" class="input" />
+                                            <input type="text" name="nome" class="input" id="campoNome" />
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <span>E-mail:</span>
-                                            <input type="text" name="" class="input" />
+                                            <input type="text" name="email" class="input" id="campoEmail" />
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <span>Telefone:</span>
-                                            <input type="text" name="" class="input" />
+                                            <input type="text" name="telefone" class="input" id="campoTelefone" />
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <span>Mensagem:</span>
-                                            <textarea cols="1" rows="1" name="" class="input"></textarea>
+                                            <textarea cols="1" rows="1" name="mensagem" class="input" id="campoMensagem"></textarea>
                                         </label>
                                     </li>
                                     <li>
@@ -101,13 +101,13 @@
                             <img src="css/imgs/depoimentos.png" alt="" />
                             <p>
                                 <strong>“</strong>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et enim magna. Nunc sit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et enim magna.
+                                Primeiro experimentei por 15 dias grátis, não acreditando muito no que o Anjomob poderia fazer pelos meus negócios. Alguns anos se passaram e ele continua aqui, firme, protegendo minha empresa, cuidando de perto dos meus colaboradores e do meu bolso (risos). Eu recomendo.
                             </p>
                             <sub>”</sub>
                         </div>
                         <div id="assinaturaDepoimento">
-                            <strong>Maria Antonieta</strong>
-                            <span>Mãe da Gabriela</span>
+                            <strong>Marcos Verginelli</strong>
+                            <!-- <span>Mãe da Gabriela</span> -->
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                     <span class="linksDireita">
                         <a href="contato.html">Contato</a> | 
                         <a href="javascript:void(0);">Imprensa</a> | 
-                        <a href="javascript:void(0);">Trabalhe Conosco</a> | 
+                        <a href="trabalhe-conosco.html">Trabalhe Conosco</a> | 
                         <a href="javascript:void(0);">FAQ</a>
                     </span>
                     
@@ -138,5 +138,36 @@
                 <p class="centro">Copyright 2013 - Anjomob. Todos os direitos reservados</p>
             </div>
         </div>
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#btEnviarFormContato").click(function(){
+                    if( $("#campoNome").val().length > 2 ){
+                        if( $("#campoEmail").val().length > 7 ){
+                            if( $("#campoTelefone").val().length > 9 ){
+                                if( $("#campoMensagem").val().length > 2 ){
+                                    $("#guardaFormContato form").attr("action", "contato.php");
+                                    $("#guardaFormContato form").submit();
+                                }else{
+                                    alert("Digite uma mensagem");
+                                    return false;
+                                }
+                            }else{
+                                alert("Digite um telefone válido");
+                                return false;
+                            }
+                        }else{
+                            alert("Digite um e-mail válido");
+                            return false;
+                        }
+                    }else{
+                        alert("Digite um nome válido");
+                        return false;
+                    }
+                });
+                //contato.php
+            });
+        </script>
     </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Como instalar - Anjomob</title>
+        <title>Trabalhe Conosco - Anjomob</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/estrutura.css" media="all" rel="stylesheet" type="text/css" />
     </head>
@@ -37,7 +37,7 @@
                         <li><a href="o-que-o-anjo-faz.html" id="o-que-o-anjo-faz">O que o Anjo faz?</a></li>
                         <li><a href="planos.html" id="planos">Planos</a></li>
                         <li><a href="javascript:void(0);" id="faq">FAQ</a></li>
-                        <li class="noPadding"><a href="como-instalar.html" id="como-instalar" class="marcado">Como instalar?</a></li>
+                        <li class="noPadding"><a href="como-instalar.html" id="como-instalar">Como instalar?</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,10 +50,42 @@
             <div class="wrapper">
                 <div id="ladoEsquerdo">
                     <div id="topoEsquerda">
-                        <h1>Como instalar</h1>
-                        <p>Para instalar o Anjomob é necessário que você possua um dispositivo móvel com <b>Android</b>.</p>
-                        <p>Faça download do aplicativo no <u>Google Play Store</u>, <b><a href="http://www.catmobile.com.br/admin/nova_conta.php" target="_blank">crie sua conta clicando aqui</a></b>, adicione os dispositivos que deseja proteger e experimente gratuitamente por 15 dias.</p>
-                        <p>Após o período de cortesia, escolha o plano que mais se adéqua à sua realidade <b><a href="http://www.catmobile.com.br/admin/servicos_cat_mobile.php" target="_blank">aqui</a></b>.</p>
+                        <h1>Trabalhe Conosco</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        
+                        <div id="guardaFormContato">
+                            <form method="post">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <span>Nome:</span>
+                                            <input type="text" name="nome" class="input" id="campoNome" />
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <span>E-mail:</span>
+                                            <input type="text" name="email" class="input" id="campoEmail" />
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <span>Telefone:</span>
+                                            <input type="text" name="telefone" class="input" id="campoTelefone" />
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <span>CV:</span>
+                                            <input type="file" name="cv" class="input" id="campoCV" />
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="submit" value="Enviar" id="btEnviarFormContato" />
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 
@@ -106,5 +138,36 @@
                 <p class="centro">Copyright 2013 - Anjomob. Todos os direitos reservados</p>
             </div>
         </div>
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#btEnviarFormContato").click(function(){
+                    if( $("#campoNome").val().length > 2 ){
+                        if( $("#campoEmail").val().length > 7 ){
+                            if( $("#campoTelefone").val().length > 9 ){
+                                if( $("#campoCV").val().length > 0 ){
+                                    $("#guardaFormContato form").attr("action", "trabalhe.php");
+                                    $("#guardaFormContato form").submit();
+                                }else{
+                                    alert("Escolha um CV");
+                                    return false;
+                                }
+                            }else{
+                                alert("Digite um telefone válido");
+                                return false;
+                            }
+                        }else{
+                            alert("Digite um e-mail válido");
+                            return false;
+                        }
+                    }else{
+                        alert("Digite um nome válido");
+                        return false;
+                    }
+                });
+                //contato.php
+            });
+        </script>
     </body>
 </html>

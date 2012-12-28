@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Como instalar - Anjomob</title>
+        <title>Vagas - Anjomob</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/estrutura.css" media="all" rel="stylesheet" type="text/css" />
     </head>
@@ -35,9 +35,9 @@
                         <li><a href="para-sua-familia.html" id="para-sua-familia">Para sua família</a></li>
                         <li><a href="para-o-seu-negocio.html" id="para-o-seu-negocio">Para o seu negócio</a></li>
                         <li><a href="o-que-o-anjo-faz.html" id="o-que-o-anjo-faz">O que o Anjo faz?</a></li>
-                        <li><a href="planos.html" id="planos">Planos</a></li>
+                        <li><a href="planos.html" id="planos" class="marcado">Planos</a></li>
                         <li><a href="javascript:void(0);" id="faq">FAQ</a></li>
-                        <li class="noPadding"><a href="como-instalar.html" id="como-instalar" class="marcado">Como instalar?</a></li>
+                        <li class="noPadding"><a href="como-instalar.html" id="como-instalar">Como instalar?</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,14 +46,40 @@
         <!-- / TOPO -->
         
         <!-- CONTEUDO -->
-        <div id="content" class="internas comoinstalar">
+        <div id="content" class="internas comoinstalar vagas">
             <div class="wrapper">
                 <div id="ladoEsquerdo">
                     <div id="topoEsquerda">
-                        <h1>Como instalar</h1>
-                        <p>Para instalar o Anjomob é necessário que você possua um dispositivo móvel com <b>Android</b>.</p>
-                        <p>Faça download do aplicativo no <u>Google Play Store</u>, <b><a href="http://www.catmobile.com.br/admin/nova_conta.php" target="_blank">crie sua conta clicando aqui</a></b>, adicione os dispositivos que deseja proteger e experimente gratuitamente por 15 dias.</p>
-                        <p>Após o período de cortesia, escolha o plano que mais se adéqua à sua realidade <b><a href="http://www.catmobile.com.br/admin/servicos_cat_mobile.php" target="_blank">aqui</a></b>.</p>
+                        <h1>Vagas</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/>
+                            <a href="javascript:void(0);" target="_blank" class="botao" id="verVagas">Ver vagas</a>
+                        </p>
+                        
+                        <div id="guardaVagas">
+                            <ul>
+                                <li>
+                                    <span><b>Vaga XPTO</b></span>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</span>
+                                    <a href="javascript:void(0);" target="_blank" class="botao">Candidatar-se</a>
+                                </li>
+                                <li>
+                                    <span><b>Vaga XPTO</b></span>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</span>
+                                    <a href="javascript:void(0);" target="_blank" class="botao">Candidatar-se</a>
+                                </li>
+                                <li>
+                                    <span><b>Vaga XPTO</b></span>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</span>
+                                    <a href="javascript:void(0);" target="_blank" class="botao">Candidatar-se</a>
+                                </li>
+                                <li>
+                                    <span><b>Vaga XPTO</b></span>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</span>
+                                    <a href="javascript:void(0);" target="_blank" class="botao">Candidatar-se</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
@@ -106,5 +132,18 @@
                 <p class="centro">Copyright 2013 - Anjomob. Todos os direitos reservados</p>
             </div>
         </div>
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#verVagas").click(function(){
+                    $("#guardaVagas").slideToggle(500);
+                });
+                
+                $("#guardaVagas .botao").click(function(){
+                    alert("Seu currículo será analisado conforme o perfil necessário para esta vaga. Em breve entraremos em contato. Boa sorte.");
+                });
+            });
+        </script>
     </body>
 </html>

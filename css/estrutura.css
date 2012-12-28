@@ -161,6 +161,10 @@ body{
 #header #guardaMenu ul li a#como-instalar:hover,
 #header #guardaMenu ul li a#como-instalar.marcado{ background:url("imgs/bg-menu-instalar.png") no-repeat 0px 0px; }
 
+#header #guardaMenu ul li a#planos{ padding:7px 24px 20px 18px; }
+#header #guardaMenu ul li a#planos:hover,
+#header #guardaMenu ul li a#planos.marcado{ background:url("imgs/bg-menu-planos.png") no-repeat 0px 0px; }
+
 #header #guardaMenu ul li a:hover,
 #header #guardaMenu ul li a.marcado{ color:#fff; }
 
@@ -263,6 +267,7 @@ body{
     color:#fff;
 }
 
+#content .botao,
 #content .depoimentos .botao,
 #content .trioHome .botao{
     float:left;
@@ -273,6 +278,7 @@ body{
     background:url("imgs/botao.png") no-repeat 0px 0px;
     text-align:center;
     padding:8px 0px 6px 0px;
+    text-decoration:none;
 }
 
 #content .depoimentos{
@@ -604,4 +610,50 @@ body{
     padding:3px 7px;
     display:inline-block;
     margin:0px 0px 0px 450px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda .planos{
+    float:left;
+    width:310px;
+    padding:30px 40px 0px 0px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda .planos p{
+    padding:10px 0px 10px 0px;
+}
+
+.internas #ladoEsquerdo #topoEsquerda .planos a{
+    text-decoration:none;
+}
+
+.internas #ladoEsquerdo #topoEsquerda .segundo{ padding-right:0px; }
+
+/* VAGAS */
+#content.vagas #ladoEsquerdo #topoEsquerda a.botao{
+    text-decoration:none;
+}
+
+.vagas #guardaVagas{
+    float:left;
+    width:700px;
+    display:none;
+    padding:20px 0px 0px 0px;
+}
+
+.vagas #guardaVagas ul{
+    float:left;
+    width:700px;
+}
+
+.vagas #guardaVagas ul li{
+    float:left;
+    width:680px;
+    padding:15px 10px 15px 10px;
+    border-bottom:1px solid #ccc;
+}
+
+.vagas #guardaVagas span{
+    float:left;
+    width:100%;
+    padding:3px 0px;
 }
